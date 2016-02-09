@@ -7,4 +7,4 @@
 	pom = push origin master
 	plm = pull origin master
 	a = add .
-
+	s = status
