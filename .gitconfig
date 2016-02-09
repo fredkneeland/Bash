@@ -1,0 +1,10 @@
+[user]
+	name = fredkneeland
+	email = fred@bladelinux.com
+
+[alias]
+	c = commit -am
+	pom = push origin master
+	plm = pull origin master
+	a = add .
+
