@@ -8,3 +8,5 @@
 	plm = pull origin master
 	a = add .
 	s = status
+	p = push origin
+	pl = pull origin
