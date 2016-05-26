@@ -1,6 +1,8 @@
-bles color in the terminal bash shell export
+#bles color in the terminal bash shell export
 CLICOLOR=1
 alias ls='ls -G'
+alias g='git'
+alias mvg='cp ~/Bash/.gitconfig ~/.gitconfig'
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'

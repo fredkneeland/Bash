@@ -10,3 +10,7 @@
 	s = status
 	p = push origin
 	pl = pull origin
+	ch = checkout
+	cb = checkout -b
+	ca = commit -a
+	st = status
