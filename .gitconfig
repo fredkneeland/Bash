@@ -14,3 +14,4 @@
 	cb = checkout -b
 	ca = commit -a
 	st = status
+	f = fetch

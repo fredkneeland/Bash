@@ -3,6 +3,8 @@ CLICOLOR=1
 alias ls='ls -G'
 alias g='git'
 alias mvg='cp ~/Bash/.gitconfig ~/.gitconfig'
+alias s='source ~/.bashrc'
+alias vb='vim ~/.bashrc'
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -15,6 +17,6 @@ NO_COLOR="\[\033[0m\]"
 
 PS1="$GREEN\u$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 
-source ~/.git-completion.sh
+#source ~/.git-completion.sh
 
-open ~/.profile
+#open ~/.profile
