@@ -13,5 +13,5 @@
 	ch = checkout
 	cb = checkout -b
 	ca = commit -a
-	st = status
+	st = stash
 	f = fetch

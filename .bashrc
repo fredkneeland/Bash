@@ -5,6 +5,8 @@ alias g='git'
 alias mvg='cp ~/Bash/.gitconfig ~/.gitconfig'
 alias s='source ~/.bashrc'
 alias vb='vim ~/.bashrc'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -20,3 +22,9 @@ PS1="$GREEN\u$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 #source ~/.git-completion.sh
 
 #open ~/.profile
+
+# Git Completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
