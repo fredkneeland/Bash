@@ -15,3 +15,4 @@
 	ca = commit -a
 	st = stash
 	f = fetch
+	clean = clean -xfdq

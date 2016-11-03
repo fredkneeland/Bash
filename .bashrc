@@ -7,6 +7,9 @@ alias s='source ~/.bashrc'
 alias vb='vim ~/.bashrc'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
+alias pubclean='rm -r .pub/ && echo "Removed .pub/"; rm -r packages/ && echo "Removed packages/"; rm .packages && echo "Removed .packages"; pubcleanlock'
+alias pubcleanlock='git ls-files pubspec.lock --error-unmatch &>/dev/null && echo "Not removing pubspec.lock - it is tracked" || (rm pubspec.lock && echo "Removed pubspec.lock")'
+
 
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -19,7 +22,7 @@ NO_COLOR="\[\033[0m\]"
 
 PS1="$GREEN\u$NO_COLOR:\w$YELLOW\$(parse_git_branch)$NO_COLOUR\$ "
 
-#source ~/.git-completion.sh
+source ~/Bash/git-completion.bash
 
 #open ~/.profile
 
